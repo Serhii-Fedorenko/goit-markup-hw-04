@@ -192,9 +192,17 @@ a {
 /* Hero */
 
 .hero {
+    max-width: 1600px;
+    max-height: 600px;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient( 
+        to right,
+        rgba(47, 48, 58, 0.8), 
+        rgba(47, 48, 58, 0.8)
+    ),
+    url(../img/jpg/Header\ img.jpg);
     background-color: var(--primary-text-color);
 }
 
@@ -267,10 +275,10 @@ a {
     border-radius: 4px;
     background-color: var(--button-bg-color);
 }
-.advantages-link:hover,
+/* .advantages-link:hover,
 .advantages-link:focus {
     background-color: var(--accent-color);
-}
+} */
 
 .advantages-link img {
     margin: auto;
@@ -334,6 +342,7 @@ a {
 
 .team-list .item {
     background-color: var(--white-color);
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .team-list .item:not(:last-child) {
@@ -534,11 +543,13 @@ a {
 }
 
 .portfolio-box {
+    padding-top: 20px;
     padding-right: 24px;
     padding-left: 24px;
 }
 
 .portfolio-boks {
+    padding-top: 20px;
     padding-left: 24px;
 }
 
@@ -562,15 +573,21 @@ a {
 .portfolio-link {
     display: block;
     width: 370px;
+    border: 1px solid #EEEEEE;
 }
 
-.portfolio-link img {
+/* .portfolio-link img {
     padding-bottom: 20px;
-}
+} */
 
 .portfolio-picslist .item {
     margin-right: 30px;
     margin-bottom: 30px;
+}
+
+.portfolio-picslist .item:hover,
+.portfolio-picslist .item:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-picslist .item:nth-child(3n) {
